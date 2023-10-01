@@ -50,6 +50,6 @@ format:
 Let's make the list more comprehensive. 
 
 ## 👥 Contributors
-<a href="https://github.com/xf-zhao/Matcha-agent/graphs/contributors">
+<a href="https://github.com/mengdi-li/awesome-RLAIF/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=mengdi-li/awesome-RLAIF"/>
 </a>
