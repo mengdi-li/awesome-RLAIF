@@ -1,5 +1,8 @@
 # Awesome RLAIF
-A continually updated list of literature on **Reinforcement Learning from AI Feedback (RLAIF)**.
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+![https://github.com/mengdi-li/awesome-RLAIF/blob/main/LICENSE](https://img.shields.io/badge/License-Apache_2.0-green)
+
+An actively updated list of literature on _**R**einforcement **L**earning from **AI** **F**eedback (RLAIF)_.
 
 ## What is RLAIF? ChatGPT: 
 Reinforcement Learning from AI Feedback (RLAIF) is a concept that describes a type of machine learning approach where an AI agent learns by receiving feedback or guidance from another AI system. This concept is closely related to the field of Reinforcement Learning (RL), which is a type of machine learning where an agent learns to make a sequence of decisions in an environment to maximize a cumulative reward.
@@ -46,5 +49,7 @@ format:
 ## Contributing
 Let's make the list more comprehensive. 
 
-
-
+## 👥 Contributors
+<a href="https://github.com/xf-zhao/Matcha-agent/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=mengdi-li/awesome-RLAIF"/>
+</a>
