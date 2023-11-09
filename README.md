@@ -2,7 +2,8 @@
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 ![https://github.com/mengdi-li/awesome-RLAIF/blob/main/LICENSE](https://img.shields.io/badge/License-Apache_2.0-green)
 
-An actively updated list of literature on _**R**einforcement **L**earning from **AI** **F**eedback (RLAIF)_.
+An actively updated list of literature on _**R**einforcement **L**earning from **AI** **F**eedback (RLAIF)_. 
+
 
 ## What is RLAIF? ChatGPT: 
 Reinforcement Learning from AI Feedback (RLAIF) is a concept that describes a type of machine learning approach where an AI agent learns by receiving feedback or guidance from another AI system. This concept is closely related to the field of Reinforcement Learning (RL), which is a type of machine learning where an agent learns to make a sequence of decisions in an environment to maximize a cumulative reward.
@@ -14,42 +15,52 @@ In traditional RL, an agent interacts with an environment and receives feedback 
 
 This approach is often used in scenarios where the RL agent needs to learn from limited human or expert feedback or when the reward signal from the environment is sparse or unclear. It can also be used to accelerate the learning process and make RL more sample-efficient. Reinforcement Learning from AI Feedback is an area of ongoing research and has applications in various domains, including robotics, autonomous vehicles, and game playing, among others.
 
-## Papers
+## Taxonomy
+Papers are divided into three categories according to their application domains: **LLMs**, **Robotics**, **Agents**. 
+We note that different from the generalized concept of **RL Agents**, the category **Agents** here specifically refers to RL agents that work on game environments (e.g., Atari games, board games) or simulation environments. There is an overlap between the category **Robotics** and **Agents** when the robot operates in simulation environments. 
+The taxonomy will be updated to accommodate the expansion of RLAIF application scenarios.
 
+## Papers
 
 ```
 format:
 - [title](paper link) | ![](https://img.shields.io/badge/CONFERENCE_'YEAR-blue)
   - Authors: ...
   - <details> <summary>Abstract (click me)</summary> ... </details>
-  - Links: [project website](website link), [code](code link), [dataset](dataset link), ...
+  - Links: [Project website](website link), [Code](code link), [Dataset](dataset link), ...
+  - Categories: LLMs / Agents / Robotics
 ```
 
 ### 2023
-
+- [Principle-Driven Self-Alignment of Language Models from Scratch with Minimal Human Supervision](https://arxiv.org/abs/2305.03047) | ![](https://img.shields.io/badge/NeurIPS_'23-blue)
+  - Authors: Zhiqing Sun, Yikang Shen, Qinhong Zhou, Hongxin Zhang, Zhenfang Chen, David Cox, Yiming Yang, Chuang Gan
+  - <details> <summary>Abstract (click me)</summary> Recent AI-assistant agents, such as ChatGPT, predominantly rely on supervised fine-tuning (SFT) with human annotations and reinforcement learning from human feedback (RLHF) to align the output of large language models (LLMs) with human intentions, ensuring they are helpful, ethical, and reliable. However, this dependence can significantly constrain the true potential of AI-assistant agents due to the high cost of obtaining human supervision and the related issues on quality, reliability, diversity, self-consistency, and undesirable biases. To address these challenges, we propose a novel approach called SELF-ALIGN, which combines principle-driven reasoning and the generative power of LLMs for the self-alignment of AI agents with minimal human supervision. Our approach encompasses four stages: first, we use an LLM to generate synthetic prompts, and a topic-guided method to augment the prompt diversity; second, we use a small set of human-written principles for AI models to follow, and guide the LLM through in-context learning from demonstrations (of principles application) to produce helpful, ethical, and reliable responses to user's queries; third, we fine-tune the original LLM with the high-quality self-aligned responses so that the resulting model can generate desirable responses for each query directly without the principle set and the demonstrations anymore; and finally, we offer a refinement step to address the issues of overly-brief or indirect responses. Applying SELF-ALIGN to the LLaMA-65b base language model, we develop an AI assistant named Dromedary. With fewer than 300 lines of human annotations (including < 200 seed prompts, 16 generic principles, and 5 exemplars for in-context learning). Dromedary significantly surpasses the performance of several state-of-the-art AI systems, including Text-Davinci-003 and Alpaca, on benchmark datasets with various settings. </details>
+  - Links: [Code & Model Weights & Dataset](https://github.com/IBM/Dromedary)
+  - Categories: LLMs
 
 - [RLAIF: Scaling Reinforcement Learning from Human Feedback with AI Feedback](https://arxiv.org/abs/2309.00267) | ![](https://img.shields.io/badge/Arxiv-blue)
-
   - Authors: Harrison Lee, Samrat Phatale, Hassan Mansoor, Kellie Lu, Thomas Mesnard, Colton Bishop, Victor Carbune, Abhinav Rastogi
   - <details> <summary>Abstract (click me)</summary> Reinforcement learning from human feedback (RLHF) is effective at aligning large language models (LLMs) to human preferences, but gathering high quality human preference labels is a key bottleneck. We conduct a head-to-head comparison of RLHF vs. RL from AI Feedback (RLAIF) - a technique where preferences are labeled by an off-the-shelf LLM in lieu of humans, and we find that they result in similar improvements. On the task of summarization, human evaluators prefer generations from both RLAIF and RLHF over a baseline supervised fine-tuned model in ~70% of cases. Furthermore, when asked to rate RLAIF vs. RLHF summaries, humans prefer both at equal rates. These results suggest that RLAIF can yield human-level performance, offering a potential solution to the scalability limitations of RLHF. </details>
+  - Categories: LLMs
 
 - [Language Model Self-improvement by Reinforcement Learning Contemplation](https://arxiv.org/abs/2305.14483) | ![](https://img.shields.io/badge/Arxiv-blue)
   - Authors: Jing-Cheng Pang, Pengyuan Wang, Kaiyuan Li, Xiong-Hui Chen, Jiacheng Xu, Zongzhang Zhang, Yang Yu
   - <details> <summary>Abstract (click me)</summary>Large Language Models (LLMs) have exhibited remarkable performance across various natural language processing (NLP) tasks. However, fine-tuning these models often necessitates substantial supervision, which can be expensive and time-consuming to obtain. This paper introduces a novel unsupervised method called LanguageModel Self-Improvement by Reinforcement Learning Contemplation (SIRLC) that improves LLMs without reliance on external labels. Our approach is grounded in the observation that it is simpler for language models to assess text quality than to generate text. Building on this insight, SIRLC assigns LLMs dual roles as both student and teacher. As a student, the LLM generates answers to unlabeled questions, while as a teacher, it evaluates the generated text and assigns scores accordingly. The model parameters are updated using reinforcement learning to maximize the evaluation score. We demonstrate that SIRLC can be applied to various NLP tasks, such as reasoning problems, text generation, and machine translation. Our experiments show that SIRLC effectively improves LLM performance without external supervision, resulting in a 5.6% increase in answering accuracy for reasoning tasks and a rise in BERTScore from 0.82 to 0.86 for translation tasks. Furthermore, SIRLC can be applied to models of different sizes, showcasing its broad applicability.</details>
+  - Categories: LLMs
 
 - [Reward Design with Language Models](https://arxiv.org/abs/2303.00001) | ![](https://img.shields.io/badge/ICLR_'23-blue)
   - Authors: Minae Kwon, Sang Michael Xie, Kalesha Bullard, Dorsa Sadigh
   - <details> <summary>Abstract (click me)</summary> Reward design in reinforcement learning (RL) is challenging since specifying human notions of desired behavior may be difficult via reward functions or require many expert demonstrations. Can we instead cheaply design rewards using a natural language interface? This paper explores how to simplify reward design by prompting a large language model (LLM) such as GPT-3 as a proxy reward function, where the user provides a textual prompt containing a few examples (few-shot) or a description (zero-shot) of the desired behavior. Our approach leverages this proxy reward function in an RL framework. Specifically, users specify a prompt once at the beginning of training. During training, the LLM evaluates an RL agent's behavior against the desired behavior described by the prompt and outputs a corresponding reward signal. The RL agent then uses this reward to update its behavior. We evaluate whether our approach can train agents aligned with user objectives in the Ultimatum Game, matrix games, and the DealOrNoDeal negotiation task. In all three tasks, we show that RL agents trained with our framework are well-aligned with the user's objectives and outperform RL agents trained with reward functions learned via supervised learning. </details>
-  - Links: [code and prompts](https://github.com/minaek/reward_design_with_llms)
+  - Links: [Code & Prompts](https://github.com/minaek/reward_design_with_llms)
+  - Categories: Agents
  
 
 ### 2022
 - [Constitutional AI: Harmlessness from AI Feedback](https://arxiv.org/abs/2212.08073) | ![](https://img.shields.io/badge/Arxiv-blue)
   - Authors: Yuntao Bai, Saurav Kadavath, Sandipan Kundu, Amanda Askell, Jackson Kernion, et al.
   - <details> <summary>Abstract (click me)</summary> As AI systems become more capable, we would like to enlist their help to supervise other AIs. We experiment with methods for training a harmless AI assistant through self-improvement, without any human labels identifying harmful outputs. The only human oversight is provided through a list of rules or principles, and so we refer to the method as 'Constitutional AI'. The process involves both a supervised learning and a reinforcement learning phase. In the supervised phase we sample from an initial model, then generate self-critiques and revisions, and then finetune the original model on revised responses. In the RL phase, we sample from the finetuned model, use a model to evaluate which of the two samples is better, and then train a preference model from this dataset of AI preferences. We then train with RL using the preference model as the reward signal, i.e. we use 'RL from AI Feedback' (RLAIF). As a result we are able to train a harmless but non-evasive AI assistant that engages with harmful queries by explaining its objections to them. Both the SL and RL methods can leverage chain-of-thought style reasoning to improve the human-judged performance and transparency of AI decision making. These methods make it possible to control AI behavior more precisely and with far fewer human labels.  </details>
-  - Links: [dataset](https://github.com/anthropics/ConstitutionalHarmlessnessPaper)
-
-
+  - Links: [Dataset](https://github.com/anthropics/ConstitutionalHarmlessnessPaper)
+  - Categories: LLMs
 
 ## Related Awesome Repos
 - [awesome-RLHF](https://github.com/opendilab/awesome-RLHF/tree/main)
