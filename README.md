@@ -115,6 +115,9 @@ format:
   - Links: [Dataset](https://github.com/anthropics/ConstitutionalHarmlessnessPaper)
   - Tags: LLMs
 
+## Related Blogs
+- [Beyond human data: RLAIF needs a rebrand](https://www.interconnects.ai/p/beyond-human-data-rlaif), Nathan Lambert, 2023. 
+
 ## Related Awesome Repos
 - [awesome-RLHF](https://github.com/opendilab/awesome-RLHF/tree/main)
 
