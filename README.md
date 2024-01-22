@@ -26,6 +26,12 @@ format:
   - Tags: LLMs / Agents
 ```
 
+### 2024
+- [Self-Rewarding Language Models](https://arxiv.org/abs/2401.10020) | ![](https://img.shields.io/badge/Arxiv-blue)
+  - Authors: Weizhe Yuan, Richard Yuanzhe Pang, Kyunghyun Cho, Sainbayar Sukhbaatar, Jing Xu, Jason Weston
+  - <details> <summary>Abstract (click me)</summary> We posit that to achieve superhuman agents, future models require superhuman feedback in order to provide an adequate training signal. Current approaches commonly train reward models from human preferences, which may then be bottlenecked by human performance level, and secondly these separate frozen reward models cannot then learn to improve during LLM training. In this work, we study Self-Rewarding Language Models, where the language model itself is used via LLM-as-a-Judge prompting to provide its own rewards during training. We show that during Iterative DPO training that not only does instruction following ability improve, but also the ability to provide high-quality rewards to itself. Fine-tuning Llama 2 70B on three iterations of our approach yields a model that outperforms many existing systems on the AlpacaEval 2.0 leaderboard, including Claude 2, Gemini Pro, and GPT-4 0613. While only a preliminary study, this work opens the door to the possibility of models that can continually improve in both axes. </details>
+  - Tags: LLMs
+
 ### 2023
 
 - [Beyond Human Data: Scaling Self-Training for Problem-Solving with Language Models](https://arxiv.org/abs/2312.06585) | ![](https://img.shields.io/badge/Arxiv-blue)
