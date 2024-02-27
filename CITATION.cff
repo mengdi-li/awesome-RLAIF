@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "You can cite it as below."
+authors:
+- family-names: "Li"
+  given-names: "Mengdi"
+- family-names: "Zhao"
+  given-names: "Xufeng"
+- family-names: "Chu"
+  given-names: "Kun"
+- family-names: "Lu"
+  given-names: "Wenhao"
+title: "Awesome RLAIF"
+version: 0.0.1
+url: "https://github.com/mengdi-li/awesome-RLAIF"
