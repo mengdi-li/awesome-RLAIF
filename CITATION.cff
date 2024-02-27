@@ -11,4 +11,16 @@ authors:
   given-names: "Wenhao"
 title: "Awesome RLAIF"
 url: "https://github.com/mengdi-li/awesome-RLAIF"
-type: generic
+preferred-citation:
+  type: generic
+  authors:
+  - family-names: "Li"
+    given-names: "Mengdi"
+  - family-names: "Zhao"
+    given-names: "Xufeng"
+  - family-names: "Chu"
+    given-names: "Kun"
+  - family-names: "Lu"
+    given-names: "Wenhao"
+  title: "Awesome RLAIF"
+  url: "https://github.com/mengdi-li/awesome-RLAIF"
