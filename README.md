@@ -15,6 +15,9 @@ In traditional RL, an agent interacts with an environment and receives feedback 
 
 This approach is often used in scenarios where the RL agent needs to learn from **limited human or expert feedback or when the reward signal from the environment is sparse or unclear**. It can also be used to **accelerate the learning process and make RL more sample-efficient**. Reinforcement Learning from AI Feedback is an area of ongoing research and has applications in various domains, including robotics, autonomous vehicles, and game playing, among others.
 
+## Note
+Some of the papers are not exact RLAIF methodologies but closely related, for example, some of them use SFT instead of RL for parameter tuning based on AI feedback/generations, MPC instead of RL policies for robotic control. Since RLAIF research is still in its early stage, we think that these relevant papers should be of benefit to the community, so we have included them in this reading list. Careful tags have been added to facilitate paper search. 
+
 ## Papers
 
 ```
@@ -23,7 +26,7 @@ format:
   - Authors: ...
   - <details> <summary>Abstract (click me)</summary> ... </details>
   - Links: [Project website](website link), [Code](code link), [Dataset](dataset link), ...
-  - Tags: LLMs / Agents
+  - Tags: ...
 ```
 
 ### 2024
@@ -77,7 +80,7 @@ format:
   - Authors: Zhiqing Sun, Yikang Shen, Qinhong Zhou, Hongxin Zhang, Zhenfang Chen, David Cox, Yiming Yang, Chuang Gan
   - <details> <summary>Abstract (click me)</summary> Recent AI-assistant agents, such as ChatGPT, predominantly rely on supervised fine-tuning (SFT) with human annotations and reinforcement learning from human feedback (RLHF) to align the output of large language models (LLMs) with human intentions, ensuring they are helpful, ethical, and reliable. However, this dependence can significantly constrain the true potential of AI-assistant agents due to the high cost of obtaining human supervision and the related issues on quality, reliability, diversity, self-consistency, and undesirable biases. To address these challenges, we propose a novel approach called SELF-ALIGN, which combines principle-driven reasoning and the generative power of LLMs for the self-alignment of AI agents with minimal human supervision. Our approach encompasses four stages: first, we use an LLM to generate synthetic prompts, and a topic-guided method to augment the prompt diversity; second, we use a small set of human-written principles for AI models to follow, and guide the LLM through in-context learning from demonstrations (of principles application) to produce helpful, ethical, and reliable responses to user's queries; third, we fine-tune the original LLM with the high-quality self-aligned responses so that the resulting model can generate desirable responses for each query directly without the principle set and the demonstrations anymore; and finally, we offer a refinement step to address the issues of overly-brief or indirect responses. Applying SELF-ALIGN to the LLaMA-65b base language model, we develop an AI assistant named Dromedary. With fewer than 300 lines of human annotations (including < 200 seed prompts, 16 generic principles, and 5 exemplars for in-context learning). Dromedary significantly surpasses the performance of several state-of-the-art AI systems, including Text-Davinci-003 and Alpaca, on benchmark datasets with various settings. </details>
   - Links: [Code & Model Weights & Dataset](https://github.com/IBM/Dromedary)
-  - Tags: LLMs
+  - Tags: LLMs, SFT
 
 - [Motif: Intrinsic Motivation from Artificial Intelligence Feedback](https://arxiv.org/abs/2310.00166) | ![](https://img.shields.io/badge/Arxiv-blue)
   - Authors: Martin Klissarov, Pierluca D'Oro, Shagun Sodhani, Roberta Raileanu, Pierre-Luc Bacon, Pascal Vincent, Amy Zhang, Mikael Henaff
