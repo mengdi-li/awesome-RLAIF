@@ -28,6 +28,14 @@ format:
   - Links: [Project website](website link), [Code](code link), [Dataset](dataset link), ...
   - Tags: ...
 ```
+### 2025
+
+
+- [Offline RLAIF: Piloting VLM Feedback for RL via SFO](https://arxiv.org/abs/2503.01062) | ![](https://img.shields.io/badge/RLC_’25-blue)
+  - Authors: Jacob Beck
+  - <details> <summary>Abstract (click me)</summary> While internet-scale image and textual data have enabled strong generalization in Vision-Language Models (VLMs), the absence of internet-scale control data has impeded the development of similar generalization in standard reinforcement learning (RL) agents. Although VLMs are fundamentally limited in their ability to solve control tasks due to their lack of action-conditioned training data, their capacity for image understanding allows them to provide valuable feedback in RL tasks by recognizing successful outcomes. A key challenge in Reinforcement Learning from AI Feedback (RLAIF) is determining how best to integrate VLM-derived signals into the learning process. We explore this question in the context of offline RL and introduce a class of methods called Sub-Trajectory Filtered Optimization (SFO). We identify three key insights. First, trajectory length plays a crucial role in offline RL, as full-trajectory preference learning exacerbates the stitching problem, necessitating the use of sub-trajectories. Second, even in Markovian environments, a non-Markovian reward signal from a sequence of images is required to assess trajectory improvement, as VLMs do not interpret control actions and must rely on visual cues over time. Third, a simple yet effective approach--filtered and weighted behavior cloning--consistently outperforms more complex RLHF-based methods. We propose Sub-Trajectory Filtered Behavior Cloning (SFBC), a method that leverages VLM feedback on sub-trajectories while incorporating a retrospective filtering mechanism that removes sub-trajectories preceding failures to improve robustness and prevent turbulence. Please enjoy our airport puns.</details>
+  - Links: [Code](https://github.com/Jacooba/OfflineRLAIF)
+  - Tags: Agents, Offline RL, VLM, Behavioral Cloning
 
 ### 2024
 
