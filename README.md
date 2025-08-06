@@ -37,6 +37,11 @@ format:
   - Links: [Code](https://github.com/Jacooba/OfflineRLAIF)
   - Tags: Agents, Offline RL, VLM, Behavioral Cloning
 
+- [Curriculum-RLAIF: Curriculum Alignment with Reinforcement Learning from AI Feedback](https://arxiv.org/abs/2505.20075) | ![](https://img.shields.io/badge/Arxiv-blue)
+  - Authors: Mengdi Li, Jiaye Lin, Xufeng Zhao, Wenhao Lu, Peilin Zhao, Stefan Wermter, Di Wang
+  - <details> <summary>Abstract (click me)</summary> Reward models trained with conventional Reinforcement Learning from AI Feedback (RLAIF) methods suffer from limited generalizability, which hinders the alignment performance of the policy model during reinforcement learning (RL). This challenge stems from various issues, including distribution shift, preference label noise, and mismatches between overly challenging samples and model capacity. In this paper, we attempt to enhance the generalizability of reward models through a data-centric approach, driven by the insight that these issues are inherently intertwined from the perspective of data difficulty. To address this, we propose a novel framework,  , which constructs preference pairs with varying difficulty levels and produces a curriculum that progressively incorporates preference pairs of increasing difficulty for reward model training. Our experimental results suggest that reward models trained with Curriculum-RLAIF achieve improved generalizability, significantly increasing the alignment performance of the policy model by a large margin without incurring additional inference costs compared to various non-curriculum baselines. Detailed analysis and comparisons with alternative approaches, including data selection via external pretrained reward models or internal self-selection mechanisms, as well as other curriculum strategies, further demonstrate the superiority of our approach in terms of simplicity, efficiency, and effectiveness.</details>
+  - Tags: LLMs, Curriculum Learning, Reward Modeling, Contrastive Prompting
+
 ### 2024
 
 - [Direct Language Model Alignment from Online AI Feedback](https://arxiv.org/abs/2402.04792) | ![](https://img.shields.io/badge/Arxiv-blue)
