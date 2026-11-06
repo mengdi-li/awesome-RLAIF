@@ -28,6 +28,15 @@ format:
   - Links: [Project website](website link), [Code](code link), [Dataset](dataset link), ...
   - Tags: ...
 ```
+### 2026
+
+
+- [Chunks as Arms: Multi-Armed Bandit-Guided Sampling for Long-Context LLM Preference Optimization](https://aclanthology.org/2026.acl-long.161/) | ![](https://img.shields.io/badge/ACL'26-blue)
+  - Authors: Shaohua Duan, Pengcheng Huang, Xinze Li, Zhenghao Liu, Xiaoyuan Yi, Yukun Yan, Shuo Wang, Yu Gu, Ge Yu, Maosong Sun
+  - <details> <summary>Abstract (click me)</summary> Long-context modeling is critical for a wide range of real-world tasks, including long-context question answering, summarization, and complex reasoning tasks. Recent studies have explored fine-tuning Large Language Models (LLMs) with synthetic data to enhance their long-context capabilities. However, the effectiveness of such approaches is often limited by the low diversity and factual inconsistencies in the generated data. To address these challenges, we propose LongMab, a novel framework that leverages a Multi-Armed Bandit (MAB) rollout strategy to identify the most informative chunks from the given long context for sampling high-quality and diverse responses and constructing preference data pairs for Direct Preference Optimization (DPO) training. Specifically, we treat context chunks as arms of MAB, select chunks based on their expected reward scores to input into LLMs to generate responses, and iteratively update these scores based on reward feedback. Both exploration and exploitation during the rollout process enable the LLM to focus on the most relevant context segments, thereby generating and collecting high-quality and diverse responses. </details>
+  - Links: [arXiv](https://arxiv.org/abs/2508.13993), [Code](https://github.com/NEUIR/LongMab-PO)
+  - Tags: LLMs, Long Context, DPO, Self-Generated Data, Multi-Armed Bandit
+
 ### 2025
 
 
