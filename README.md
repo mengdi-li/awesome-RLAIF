@@ -28,6 +28,14 @@ format:
   - Links: [Project website](website link), [Code](code link), [Dataset](dataset link), ...
   - Tags: ...
 ```
+### 2026
+
+
+- [SP^2DPO: An LLM-assisted Semantic Per-Pair DPO Generalization](https://arxiv.org/abs/2601.22385) | ![](https://img.shields.io/badge/Arxiv-blue)
+  - Authors: Chaoyue He, Xin Zhou, Di Wang, Hong Xu, Wei Liu, Chunyan Miao
+  - <details> <summary>Abstract (click me)</summary> Direct Preference Optimization (DPO) controls the trade-off between fitting preference labels and staying close to a reference model using a single global temperature beta, implicitly treating all preference pairs as equally informative. Real-world preference corpora are heterogeneous: they mix high-signal, objective failures (for example, safety, factuality, instruction violations) with low-signal or subjective distinctions (for example, style), and also include label noise. We introduce our method, SP2DPO (Semantic Per-Pair DPO), a generalization that replaces the global temperature with an instance-specific schedule beta_i pre-decided offline from structured semantic-gap annotations (category, magnitude, confidence) produced by teacher language models. We instantiate this procedure on the UltraFeedback preference corpus (59,960 pairs), enabling large-scale construction of an auditable beta_i artifact, and incur zero training-time overhead: the inner-loop optimizer remains standard DPO with beta set per pair. We focus our empirical study on AlpacaEval 2.0, reporting both raw win rate and length-controlled win rate. Across four open-weight, instruction-tuned student backbones (4B-8B), SP2DPO is competitive with a tuned global-beta DPO baseline and improves AlpacaEval 2.0 length-controlled win rate on two of four backbones, while avoiding per-model beta sweeps. All code, annotations, and artifacts will be released. </details>
+  - Tags: LLMs, DPO, AI Feedback, Preference Optimization
+
 ### 2025
 
 
